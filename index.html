@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="To Do List">
+        <meta name="author" content="George Papalazaridis">
+        <meta name="keywords" content="To Do List, HTML, CSS, JavaScript">
+
+        <meta property="og:title" content="To Do List" />
+        <meta property="og:description" content="To Do List" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="website" />
+
+        <meta property="og:site_name" content="To Do List" />
+        <meta property="og:locale" content="gr_GR" />
+        <meta property="og:robots" content="index, follow" />
+
+        <title>To Do List</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <main class="container">
+            <section id="list-container-1" class="todo-list-container">
+                <div class="form-container">
+                    <h1>To Do List</h1>
+                    <div id="form-wrapper-1" class="form-wrapper">
+                        <div id="input-wrapper-1" class="form-wrapper">
+                            <label for="input-1">Add a new task:</label><br>
+                            <input type="text" id="input-1" name="input-1" placeholder="What do you need to do today?"
+                                class="input" required>
+                        </div>
+
+                        <div id="btn-wrapper" class="btn-wrapper">
+                            <button id="add-btn" class="btn" aria-label="Add a new task">Add</button>
+                            <button id="clear-btn" class="btn" aria-label="Clear the input field">Clear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="list-wrapper-1" class="list-wrapper" aria-live="polite">
+                    <ul role="list" class="todo-list"></ul>
+                </section>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
