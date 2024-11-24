@@ -1,0 +1,27 @@
+.list-wrapper {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-list > li:last-child {
+    border-bottom: none;
+}
+
+.todo-list > li span {
+    flex: 1;
+    margin-right: 10px; /* Add some space between text and button */
+}
