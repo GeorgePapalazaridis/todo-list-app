@@ -1,20 +1,27 @@
 "use strict";
 
+const ADD_BTN_SELECTOR = ".btn[aria-label='Add a new task']";
+const CLEAR_BTN_SELECTOR = ".btn[aria-label='Clear the input field']";
+
 class TodoList {
     constructor(containerSelector) {
+        // Check if we are in a testing environment
+        if (typeof document === "undefined") {
+            return; // Exit if document is not available (e.g., during tests)
+        }
+
         // Scope all elements to the provided containerSelector
         const container = document.querySelector(containerSelector);
 
-        this.input = container.querySelector(".input");
-        this.btnAdd = document.getElementById("add-btn");
-        this.btnClear = document.getElementById("clear-btn");
+        if (!container) {
+            throw new Error(
+                `Container with selector "${containerSelector}" not found.`
+            );
+        }
 
-        // this.btnAdd = container.querySelector(
-        //     ".btn[aria-label='Add a new task']"
-        // );
-        // this.btnClear = container.querySelector(
-        //     ".btn[aria-label='Clear the input field']"
-        // );
+        this.input = container.querySelector(".input");
+        this.btnAdd = container.querySelector(ADD_BTN_SELECTOR);
+        this.btnClear = container.querySelector(CLEAR_BTN_SELECTOR);
         this.listGroupItems = container.querySelector(".todo-list");
 
         // Ensure all elements exist in the container
@@ -88,6 +95,8 @@ class TodoList {
         }
     }
 }
+
+export default TodoList;
 
 // Instantiate the TodoList class for the specific container
 new TodoList("#list-container-1");
