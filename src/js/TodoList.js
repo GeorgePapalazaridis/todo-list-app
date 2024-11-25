@@ -43,7 +43,7 @@ class TodoList {
         this.btnClear.addEventListener("click", this.handleClearBtn.bind(this));
         this.listGroupItems.addEventListener(
             "click",
-            this.handleListItems.bind(this)
+            this.handleListItemsDelete.bind(this)
         );
         this.input.addEventListener("keypress", (e) => {
             if (e.key === "Enter") {
@@ -89,14 +89,18 @@ class TodoList {
         this.input.value = ""; // Clear the input field
     }
 
-    handleListItems(e) {
+    handleListItemsDelete(e) {
         if (e.target.classList.contains("delete-btn")) {
-            e.target.parentElement.remove(); // Remove the task
+            const listItem = e.target.parentElement;
+
+            // Show the custom confirmation dialog
+            window.showDeleteConfirmation(() => {
+                listItem.remove(); // Remove the list item after confirmation
+            });
         }
     }
 }
 
 export default TodoList;
 
-// Instantiate the TodoList class for the specific container
 new TodoList("#list-container-1");
