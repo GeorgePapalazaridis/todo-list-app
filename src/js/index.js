@@ -1,4 +1,4 @@
 import "./TodoList.js";
-import { loadDialog } from "popupDialog.js";
+import { loadDialog } from "./PopupDialog.js";
 
 loadDialog();
