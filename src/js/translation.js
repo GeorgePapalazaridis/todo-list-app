@@ -25,7 +25,15 @@ function applyTranslations() {
         const key = element.getAttribute("data-translate-key");
         const translation = currentTranslation[key];
         if (translation) {
-            element.textContent = translation;
+            // Check if the element contains a Material Icon
+            const icon = element.querySelector(".material-icons");
+            if (icon) {
+                // Update only the text after the icon
+                element.innerHTML = `<span class="material-icons">${icon.textContent}</span> ${translation}`;
+            } else {
+                // If no icon, update the entire content
+                element.textContent = translation;
+            }
         }
     });
 

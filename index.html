@@ -39,27 +39,24 @@
                     </button>
                 </div>
 
-
-
                 <div class="form-container">
                     <h1 data-translate-key="todoTitle"></h1>
                     <div id="form-wrapper-1" class="form-wrapper">
                         <div id="input-wrapper-1" class="form-wrapper">
-                            <label for="input-1" data-translate-key="addTaskLabel">Add a new task:</label><br>
+                            <label for="input-1" data-translate-key="addTaskLabel"></label><br>
                             <input type="text" id="input-1" name="input-1" placeholder="What do you need to do today?"
                                 class="input" required>
                         </div>
 
                         <div id="btn-wrapper" class="btn-wrapper">
-                            <button id="add-btn" class="btn" aria-label="Add a new task">
+                            <button id="add-btn" class="btn" aria-label="Add a new task" data-translate-key="addButton">
                                 <span class="material-icons">add</span>
-                                Add
-                            </button>
-                            <button id="clear-btn" class="btn" aria-label="Clear the input field">
-                                <span class="material-icons">clear</span>
-                                Clear
-                            </button>
 
+                            </button>
+                            <button id="clear-btn" class="btn" aria-label="Clear the input field"
+                                data-translate-key="clearButton">
+                                <span class="material-icons">clear</span>
+                            </button>
                         </div>
                     </div>
 
@@ -74,5 +71,7 @@
 
         <script type="module" src="src/js/index.js"></script>
     </body>
+
+    <footer></footer>
 
 </html>

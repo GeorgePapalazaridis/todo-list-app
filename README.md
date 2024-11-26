@@ -38,7 +38,7 @@ A dynamic and responsive To-Do List application featuring **Light and Dark Modes
 
 -   **HTML5**: Semantic structure.
 -   **CSS3**: Styling and responsive design.
--   **JavaScript (ES6)**: Interactivity, dynamic themes, and local storage.
+-   **Vanilla JavaScript**: Interactivity, dynamic themes, and local storage.
 -   **Material Icons**: Enhancing UI consistency.
 
 ---
