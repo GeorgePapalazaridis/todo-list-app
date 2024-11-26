@@ -1,10 +1,10 @@
 @import "./global.css";
-
 @import "./container.css";
 @import "./form.css";
 @import "./buttons.css";
 @import "./list.css";
 @import "./delete-dialog.css";
 @import "./theme-toggle.css";
+@import "./footer.css";
 
 @import "./variables.css";
