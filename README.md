@@ -87,7 +87,6 @@ Ensure you have a modern browser and basic knowledge of HTML, CSS, and JavaScrip
 
 ## 📂 Project Structure
 
-## Project Structure
 
 ```text
 todo-list-app/
