@@ -1,0 +1,10 @@
+{
+    "todoTitle": "To Do List",
+    "addTaskLabel": "Add a new task:",
+    "addButton": "Add",
+    "clearButton": "Clear",
+    "deleteButton": "Delete",
+    "confirmDelete": "Are you sure you want to delete this?",
+    "cancelButton": "Cancel",
+    "deleteDialogTitle": "Confirm Deletion"
+}
