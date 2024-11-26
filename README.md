@@ -30,8 +30,6 @@ A dynamic and responsive To-Do List application featuring **Light and Dark Modes
 
 ![Dark Mode - Dialog Preview](https://github.com/user-attachments/assets/3c7be3e6-c527-4901-a3d4-94c2989160ef)
 
-
-
 ---
 
 ## 💻 Technologies Used
@@ -101,23 +99,24 @@ todo-list-app/
 │   ├── components/
 │   │   └── deleteConfirmationDialog.html
 │   ├── css/
+│   │   ├── material-icons/
+│   │   │   ├── material-icons.css
+│   │   │   ├── MaterialIcons-Regular.woff2
+│   │   │   ├── MaterialIcons-Regular.woff
+│   │   │   ├── MaterialIcons-Regular.ttf
+│   │   │   ├── MaterialIcons-Regular.eot
+│   │   │   ├── MaterialIcons-Regular.ijmap
+│   │   │   ├── MaterialIcons-Regular.svg
 │   │   ├── buttons.css
 │   │   ├── container.css
 │   │   ├── delete-dialog.css
+│   │   ├── footer.css
 │   │   ├── form.css
 │   │   ├── global.css
 │   │   ├── index.css
 │   │   ├── list.css
 │   │   ├── theme-toggle.css
 │   │   ├── variables.css          # CSS for color variables (light & dark mode)
-│   ├── material-icons/
-│   │   ├── material-icons.css
-│   │   ├── MaterialIcons-Regular.woff2
-│   │   ├── MaterialIcons-Regular.woff
-│   │   ├── MaterialIcons-Regular.ttf
-│   │   ├── MaterialIcons-Regular.eot
-│   │   ├── MaterialIcons-Regular.ijmap
-│   │   ├── MaterialIcons-Regular.svg
 │   ├── js/
 │       ├── helpers.js
 │       ├── index.js

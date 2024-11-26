@@ -36,7 +36,7 @@ export function initializeTheme() {
     const themeToggleIcon = document.getElementById("theme-toggle-icon");
     if (themeToggleIcon) {
         themeToggleIcon.textContent =
-            savedTheme === "dark" ? "dark_mode" : "light_mode";
+            savedTheme === "dark" ? "light_mode" : "dark_mode";
     }
 
     const themeToggleBtn = document.getElementById("theme-toggle-btn");
