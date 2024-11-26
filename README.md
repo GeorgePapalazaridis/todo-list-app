@@ -87,12 +87,15 @@ Ensure you have a modern browser and basic knowledge of HTML, CSS, and JavaScrip
 
 ## 📂 Project Structure
 
+## Project Structure
+
+```text
 todo-list-app/
 ├── assets/
 │   └── images/
 │       ├── dark-theme-bg.webp
 │       ├── light-theme-bg.webp
-├── node_modules/              # Node.js modules (dependencies)
+├── node_modules/                   # Node.js modules (dependencies)
 ├── src/
 │   ├── components/
 │   │   └── deleteConfirmationDialog.html
@@ -105,29 +108,30 @@ todo-list-app/
 │   │   ├── index.css
 │   │   ├── list.css
 │   │   ├── theme-toggle.css
-│   │   ├── variables.css       # CSS for color variables (light & dark mode)
-│   │   └── material-icons/     # Material Icons styles and fonts
-│   │       ├── material-icons.css
-│   │       ├── MaterialIcons-Regular.woff2
-│   │       ├── MaterialIcons-Regular.woff
-│   │       ├── MaterialIcons-Regular.ttf
-│   │       ├── MaterialIcons-Regular.eot
-│   │       ├── MaterialIcons-Regular.ijmap
-│   │       └── MaterialIcons-Regular.svg
+│   │   ├── variables.css          # CSS for color variables (light & dark mode)
+│   ├── material-icons/
+│   │   ├── material-icons.css
+│   │   ├── MaterialIcons-Regular.woff2
+│   │   ├── MaterialIcons-Regular.woff
+│   │   ├── MaterialIcons-Regular.ttf
+│   │   ├── MaterialIcons-Regular.eot
+│   │   ├── MaterialIcons-Regular.ijmap
+│   │   ├── MaterialIcons-Regular.svg
 │   ├── js/
-│   │   ├── helpers.js
-│   │   ├── index.js
-│   │   ├── popupDialog.js
-│   │   ├── theme.js            # Handles light/dark mode toggle
-│   │   └── TodoList.js
+│       ├── helpers.js
+│       ├── index.js
+│       ├── popupDialog.js
+│       ├── theme.js               # Handles light/dark mode toggle
+│       ├── TodoList.js
 ├── tests/
-│   └── TodoList.test.js        # Unit tests for the To-Do list
-├── .gitignore                  # Git ignore rules
-├── babel.config.js             # Babel configuration
-├── index.html                  # Main entry point of the app
-├── jest.config.js              # Jest configuration
-├── LICENSE                     # Project license
-├── package.json                # Node.js project metadata and dependencies
-├── package-lock.json           # Dependency lock file
-└── README.md                   # Project documentation
+│   └── TodoList.test.js           # Unit tests for the To-Do list
+├── .gitignore                      # Git ignore rules
+├── babel.config.js                 # Babel configuration
+├── index.html                      # Main entry point of the app
+├── jest.config.js                  # Jest configuration
+├── LICENSE                         # Project license
+├── package.json                    # Node.js project metadata and dependencies
+├── package-lock.json               # Dependency lock file
+└── README.md                       # Project documentation
+```
 
