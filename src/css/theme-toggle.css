@@ -1,0 +1,26 @@
+#theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-background-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+#theme-toggle-btn:hover {
+    background-color: var(--button-hover-background-color);
+    transform: scale(0.95);
+}
+
+#theme-toggle-icon {
+    font-family: "Material Icons";
+    font-size: 24px;
+    color: var(--button-icon-color);
+    line-height: 1;
+    display: inline-block;
+}

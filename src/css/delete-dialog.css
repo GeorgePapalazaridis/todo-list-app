@@ -3,9 +3,9 @@
     max-width: 90%;
     border: none;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px var(--box-shadow-color);
     padding: 25px;
-    background: white;
+    background: var(--dialog-background-color);
     text-align: center;
     position: fixed; /* Ensures it's always visible */
     top: 50%; /* Centers the dialog */
@@ -31,12 +31,12 @@
 .delete-dialog-content h2 {
     margin-bottom: 20px;
     font-size: 20px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .delete-dialog-content p {
     margin-bottom: 20px;
-    color: #666;
+    color: var(--text-secondary-color);
     font-size: 16px;
 }
 
@@ -57,27 +57,27 @@
 }
 
 .btn-danger {
-    background-color: #dc3545;
-    color: white;
+    background-color: var(--danger-color);
+    color: var(--text-button-color);
 }
 
 .btn-danger:hover {
-    background-color: #b02a37;
+    background-color: var(--danger-hover-color);
     transform: scale(0.95);
 }
 
 .btn-secondary {
-    background-color: #6c757d;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--text-button-color);
 }
 
 .btn-secondary:hover {
-    background-color: #5a6268;
+    background-color: var(--secondary-hover-color);
     transform: scale(0.95);
 }
 
 /* Backdrop for the dialog */
 dialog::backdrop {
-    background: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    background: var(--dimmed-overlay-color); /* Dimmed background */
     transition: background 0.3s ease; /* Smooth transition for backdrop */
 }

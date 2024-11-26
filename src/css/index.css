@@ -5,3 +5,6 @@
 @import "./buttons.css";
 @import "./list.css";
 @import "./delete-dialog.css";
+@import "./theme-toggle.css";
+
+@import "./variables.css";

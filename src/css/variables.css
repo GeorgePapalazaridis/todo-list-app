@@ -1,0 +1,57 @@
+/* Default (Light Mode) */
+:root {
+    --primary-color: #94bdcd; /* Button primary background */
+    --primary-hover-color: #729baf; /* Button primary hover background */
+
+    --danger-color: #dc3545; /* Delete button background */
+    --danger-hover-color: #b02a37; /* Delete button hover background */
+
+    --secondary-color: #6c757d; /* Secondary button background */
+    --secondary-hover-color: #5a6268; /* Secondary button hover background */
+
+    --border-color: #ccc; /* General border color */
+    --background-color: #f9f9f9; /* Todo list container background */
+    --body-background-color: #f4f4f9; /* Body background */
+    --dialog-background-color: #ffffff; /* Dialog background */
+    --text-color: #333; /* Primary text color */
+    --text-secondary-color: #666; /* Secondary text color */
+    --text-button-color: #ffffff; /* Button text color */
+    --dimmed-overlay-color: rgba(0, 0, 0, 0.5); /* Backdrop overlay */
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --button-background-color: #f0f0f0;
+    --button-hover-background-color: #e0e0e0;
+    --button-icon-color: #333;
+    --input-background-color: #e0d8d2;
+    --delete-btn-background-color: #333;
+    --delete-btn-icon-color: #f9f9f9;
+    --delete-btn-hover-color: #666;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --primary-color: #628594;
+    --primary-hover-color: #3f535c;
+
+    --danger-color: #f44336;
+    --danger-hover-color: #d32f2f;
+
+    --secondary-color: #8a8a8a;
+    --secondary-hover-color: #6d6d6d;
+
+    --border-color: #444;
+    --background-color: #2c2c2c;
+    --body-background-color: #121212;
+    --dialog-background-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --text-secondary-color: #b0b0b0;
+    --text-button-color: #111014;
+    --dimmed-overlay-color: rgba(255, 255, 255, 0.1);
+    --box-shadow-color: rgba(255, 255, 255, 0.2);
+    --button-background-color: #404747;
+    --button-hover-background-color: #555;
+    --button-icon-color: #c2c2b0;
+    --input-background-color: #404747;
+    --delete-btn-background-color: #c2c2b0;
+    --delete-btn-icon-color: #2c2c2c;
+    --delete-btn-hover-color: #b0b0b0;
+}
