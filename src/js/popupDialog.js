@@ -28,22 +28,34 @@ export async function loadDialog() {
         }
 
         window.showDeleteConfirmation = (onConfirm) => {
-            deleteDialog.showModal();
+            deleteDialog.classList.remove("closing"); // Remove closing class if present
+            deleteDialog.showModal(); // Open the dialog first
 
-            // Remove previous event listeners to avoid stacking them
-            confirmDeleteBtn.onclick = null;
+            // Use a small delay to ensure the dialog is open before applying the `opening` class
+            setTimeout(() => {
+                deleteDialog.classList.add("opening");
+            }, 50);
 
-            // Add a new click event listener for confirming the deletion
+            confirmDeleteBtn.onclick = null; // Clear any previous listeners
+
             confirmDeleteBtn.addEventListener("click", () => {
                 if (typeof onConfirm === "function") {
-                    onConfirm(); // Call the passed function (e.g., delete the task)
+                    onConfirm();
                 }
-                deleteDialog.close();
+                closeDialog();
             });
 
-            cancelDeleteBtn.addEventListener("click", () => {
+            cancelDeleteBtn.addEventListener("click", closeDialog);
+        };
+
+        const closeDialog = () => {
+            deleteDialog.classList.remove("opening");
+            deleteDialog.classList.add("closing");
+
+            setTimeout(() => {
                 deleteDialog.close();
-            });
+                deleteDialog.classList.remove("closing");
+            }, 300); // Matches the CSS transition duration
         };
     } catch (error) {
         console.error("Failed to load the dialog: ", error);

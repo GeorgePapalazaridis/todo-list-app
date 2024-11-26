@@ -9,6 +9,7 @@ yarn-error.log*
 
 # Testing output
 coverage/
+.jest/
 
 # OS generated files
 .DS_Store
@@ -18,10 +19,15 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+*~
 
 # Build files
 dist/
 build/
+
+# Source maps
+*.css.map
+*.js.map
 
 # Temporary files
 *.tmp
@@ -33,5 +39,8 @@ build/
 .env.local
 .env.*.local
 
-# Jest cache
-.jest/
+# Images or generated assets
+assets/generated/
+
+# Material Icons
+src/css/material-icons/

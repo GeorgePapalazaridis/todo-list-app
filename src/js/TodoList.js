@@ -71,8 +71,15 @@ class TodoList {
 
         // Create the delete button
         const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
-        deleteButton.className = "delete-btn btn";
+        deleteButton.className = "delete-btn";
+
+        // Add the material icon to the button
+        const deleteIcon = document.createElement("span");
+        deleteIcon.className = "material-icons";
+        deleteIcon.textContent = "delete"; // Material icon for delete
+
+        // Append the icon to the button
+        deleteButton.appendChild(deleteIcon);
 
         // Append the span and button to the list item
         listItem.appendChild(taskText);
@@ -90,12 +97,17 @@ class TodoList {
     }
 
     handleListItemsDelete(e) {
-        if (e.target.classList.contains("delete-btn")) {
-            const listItem = e.target.parentElement;
+        // Check if the clicked element is part of a delete button
+        if (
+            e.target.classList.contains("material-icons") &&
+            e.target.closest(".delete-btn")
+        ) {
+            // Find the closest parent <li> element of the clicked delete button
+            const listItem = e.target.closest("li");
 
             // Show the custom confirmation dialog
             window.showDeleteConfirmation(() => {
-                listItem.remove(); // Remove the list item after confirmation
+                listItem.remove(); // Remove the entire <li> element after confirmation
             });
         }
     }

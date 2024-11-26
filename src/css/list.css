@@ -22,8 +22,3 @@
 .todo-list > li:last-child {
     border-bottom: none;
 }
-
-.todo-list > li span {
-    flex: 1;
-    margin-right: 10px;
-}
