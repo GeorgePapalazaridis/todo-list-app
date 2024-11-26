@@ -28,6 +28,12 @@ function applyTranslations() {
             element.textContent = translation;
         }
     });
+
+    // Update the input placeholder based on the selected language
+    const inputField = document.getElementById("input-1");
+    if (inputField) {
+        inputField.placeholder = currentTranslation["addTaskPlaceholder"] || "";
+    }
 }
 
 export function toggleLanguage() {

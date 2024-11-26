@@ -31,26 +31,21 @@
         <main class="container">
             <section id="list-container-1" class="todo-list-container">
                 <div class="settings-container">
-                    <button id="theme-toggle-btn" class="btn btn-secondary">
-                        <span id="theme-toggle-icon" class="material-icons">
-                            light_mode
-                        </span>
+                    <button id="theme-toggle-btn" class="btn">
+                        <span id="theme-toggle-icon" class="material-icons">light_mode</span>
                     </button>
-
-                    <button id="language-toggle-btn" class="btn btn-secondary">
-                        <span class="material-icons">
-                            language
-                        </span>
+                    <button id="language-toggle-btn" class="btn">
+                        <span class="material-icons">language</span>
                     </button>
-
                 </div>
+
 
 
                 <div class="form-container">
                     <h1 data-translate-key="todoTitle"></h1>
                     <div id="form-wrapper-1" class="form-wrapper">
                         <div id="input-wrapper-1" class="form-wrapper">
-                            <label for="input-1">Add a new task:</label><br>
+                            <label for="input-1" data-translate-key="addTaskLabel">Add a new task:</label><br>
                             <input type="text" id="input-1" name="input-1" placeholder="What do you need to do today?"
                                 class="input" required>
                         </div>

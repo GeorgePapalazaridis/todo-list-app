@@ -1,6 +1,7 @@
 {
     "todoTitle": "To Do List",
     "addTaskLabel": "Add a new task:",
+    "addTaskPlaceholder": "What do you need to do today?",
     "addButton": "Add",
     "clearButton": "Clear",
     "deleteButton": "Delete",

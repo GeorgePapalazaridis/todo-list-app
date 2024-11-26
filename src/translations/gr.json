@@ -1,6 +1,7 @@
 {
     "todoTitle": "Λίστα Εργασιών",
     "addTaskLabel": "Προσθέστε νέα εργασία:",
+    "addTaskPlaceholder": "Τι έχετε να κάνετε σήμερα;",
     "addButton": "Προσθήκη",
     "clearButton": "Καθαρισμός",
     "deleteButton": "Διαγραφή",
