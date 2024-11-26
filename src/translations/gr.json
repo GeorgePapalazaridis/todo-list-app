@@ -1,0 +1,11 @@
+{
+    "todoTitle": "Λίστα Εργασιών",
+    "addTaskLabel": "Προσθέστε νέα εργασία:",
+    "addTaskPlaceholder": "Τι έχετε να κάνετε σήμερα;",
+    "addButton": "Προσθήκη",
+    "clearButton": "Καθαρισμός",
+    "deleteButton": "Διαγραφή",
+    "confirmDelete": "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό;",
+    "cancelButton": "Ακύρωση",
+    "deleteDialogTitle": "Επιβεβαίωση Διαγραφής"
+}

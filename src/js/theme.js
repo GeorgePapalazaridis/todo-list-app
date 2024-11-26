@@ -16,11 +16,11 @@ export function toggleTheme() {
     // Update the theme toggle icon
     const themeToggleIcon = document.getElementById("theme-toggle-icon");
     if (themeToggleIcon) {
-        themeToggleIcon.textContent = isDarkMode ? "light_mode" : "dark_mode";
+        themeToggleIcon.textContent = isDarkMode ? "dark_mode" : "light_mode";
     }
 
     // Persist the selected theme in localStorage
-    localStorage.setItem("theme", isDarkMode ? "light" : "dark");
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
 }
 
 export function initializeTheme() {
