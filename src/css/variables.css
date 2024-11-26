@@ -1,7 +1,7 @@
 /* Default (Light Mode) */
 :root {
-    --primary-color: #007bff; /* Button primary background */
-    --primary-hover-color: #0056b3; /* Button primary hover background */
+    --primary-color: #94bdcd; /* Button primary background */
+    --primary-hover-color: #729baf; /* Button primary hover background */
 
     --danger-color: #dc3545; /* Delete button background */
     --danger-hover-color: #b02a37; /* Delete button hover background */
@@ -21,12 +21,16 @@
     --button-background-color: #f0f0f0;
     --button-hover-background-color: #e0e0e0;
     --button-icon-color: #333;
+    --input-background-color: #e0d8d2;
+    --delete-btn-background-color: #333;
+    --delete-btn-icon-color: #f9f9f9;
+    --delete-btn-hover-color: #666;
 }
 
 /* Dark Mode */
 [data-theme="dark"] {
-    --primary-color: #89baea;
-    --primary-hover-color: #0d47a1;
+    --primary-color: #628594;
+    --primary-hover-color: #3f535c;
 
     --danger-color: #f44336;
     --danger-hover-color: #d32f2f;
@@ -40,10 +44,14 @@
     --dialog-background-color: #1e1e1e;
     --text-color: #e0e0e0;
     --text-secondary-color: #b0b0b0;
-    --text-button-color: #000000;
+    --text-button-color: #111014;
     --dimmed-overlay-color: rgba(255, 255, 255, 0.1);
     --box-shadow-color: rgba(255, 255, 255, 0.2);
-    --button-background-color: #444;
+    --button-background-color: #404747;
     --button-hover-background-color: #555;
-    --button-icon-color: #e0e0e0;
+    --button-icon-color: #c2c2b0;
+    --input-background-color: #404747;
+    --delete-btn-background-color: #c2c2b0;
+    --delete-btn-icon-color: #2c2c2c;
+    --delete-btn-hover-color: #b0b0b0;
 }

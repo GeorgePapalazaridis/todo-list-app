@@ -32,15 +32,15 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: var(--danger-color);
-    color: var(--text-button-color);
+    background-color: var(--delete-btn-background-color);
+    color: var(--delete-btn-icon-color);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .delete-btn:hover {
-    background-color: var(--danger-hover-color);
+    background-color: var(--delete-btn-hover-color);
     transform: scale(0.95);
 }
 
