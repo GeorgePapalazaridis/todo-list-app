@@ -1,34 +1,49 @@
 .btn-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 2rem;
 }
 
 .btn {
     flex: 1;
-    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 8px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .btn:hover {
     background-color: #0056b3;
+    transform: scale(0.95);
 }
 
 .delete-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     background-color: #dc3545;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    padding: 5px 10px;
-    flex-shrink: 0;
-    max-width: 5rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .delete-btn:hover {
-    background-color: #a71d2a;
+    background-color: #b02a37;
+    transform: scale(0.95);
+}
+
+.material-icons {
+    font-size: 10px;
 }

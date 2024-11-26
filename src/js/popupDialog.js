@@ -34,7 +34,7 @@ export async function loadDialog() {
             // Use a small delay to ensure the dialog is open before applying the `opening` class
             setTimeout(() => {
                 deleteDialog.classList.add("opening");
-            }, 10);
+            }, 50);
 
             confirmDeleteBtn.onclick = null; // Clear any previous listeners
 

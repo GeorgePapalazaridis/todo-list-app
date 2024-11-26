@@ -41,3 +41,6 @@ build/
 
 # Images or generated assets
 assets/generated/
+
+# Material Icons
+src/css/material-icons/
