@@ -13,10 +13,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: var(--body-background-color);
+    color: var(--text-color);
 
-    background-image: url("/assets/images/background.webp"); /* Adjust the path if necessary */
+    background-image: url("/assets/images/light-theme-bg.webp"); /* Adjust the path if necessary */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-repeat: no-repeat; /* Prevents tiling of the image */
     background-position: center center; /* Centers the image */

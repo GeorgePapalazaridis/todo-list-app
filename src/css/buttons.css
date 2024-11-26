@@ -11,8 +11,8 @@
     justify-content: center;
     gap: 1rem;
     padding: 8px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-button-color);
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -21,7 +21,7 @@
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-hover-color);
     transform: scale(0.95);
 }
 
@@ -32,15 +32,15 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #dc3545;
-    color: white;
+    background-color: var(--danger-color);
+    color: var(--text-button-color);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .delete-btn:hover {
-    background-color: #b02a37;
+    background-color: var(--danger-hover-color);
     transform: scale(0.95);
 }
 
