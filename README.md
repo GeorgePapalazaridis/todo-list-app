@@ -20,15 +20,19 @@ A dynamic and responsive To-Do List application featuring **Light and Dark Modes
 
 ### Light Mode
 
-![Light Mode Preview](https://github.com/user-attachments/assets/75788723-891d-405b-a9e4-72ace0e63302)
+![Light Mode Preview](https://github.com/user-attachments/assets/c2815fe2-a36d-4a1d-b7d8-419ef977d386)
 
-![Light Mode - Dialog Preview](https://github.com/user-attachments/assets/c8cf5848-6aa0-4e2c-a220-caef5e750b4a)
+
+![Light Mode - Dialog Preview](https://github.com/user-attachments/assets/c4747a17-00b8-464e-9c8f-598729cb8c42)
+
 
 ### Dark Mode
 
-![Dark Mode Preview](https://github.com/user-attachments/assets/ed6bf4e3-36d8-44aa-b18f-5b2c784bed79)
+![Dark Mode Preview](https://github.com/user-attachments/assets/7512302d-1dc4-48ca-8769-78bd43c02025)
 
-![Dark Mode - Dialog Preview](https://github.com/user-attachments/assets/3c7be3e6-c527-4901-a3d4-94c2989160ef)
+
+![Dark Mode - Dialog Preview](https://github.com/user-attachments/assets/6575553f-3087-4be5-a244-eb0a49636856)
+
 
 ---
 
