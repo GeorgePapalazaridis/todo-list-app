@@ -1,11 +1,3 @@
-/* Reset styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Body styles */
 body {
     width: 100vw;
     height: 100vh;
@@ -16,9 +8,22 @@ body {
     background-color: var(--body-background-color);
     color: var(--text-color);
 
-    background-image: url("/assets/images/light-theme-bg.webp"); /* Adjust the path if necessary */
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
-    background-position: center center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    min-width: var(--min-bg-width);
+    max-width: var(--max-bg-width);
+    margin: 0 auto;
+}
+
+.light-theme-bg {
+    background-image: url("/assets/images/light-theme-bg.webp");
+}
+
+.dark-theme-bg {
+    background-image: url("/assets/images/dark-theme-bg.webp");
+}
+
+.light-theme-bg,
+.dark-theme-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

@@ -2,24 +2,21 @@ export function toggleTheme() {
     const isDarkMode =
         document.documentElement.getAttribute("data-theme") === "dark";
 
-    // Toggle the theme
     if (isDarkMode) {
         document.documentElement.setAttribute("data-theme", "light");
-        document.body.style.backgroundImage =
-            "url('/assets/images/light-theme-bg.webp')";
+        document.body.classList.remove("dark-theme-bg");
+        document.body.classList.add("light-theme-bg");
     } else {
         document.documentElement.setAttribute("data-theme", "dark");
-        document.body.style.backgroundImage =
-            "url('/assets/images/dark-theme-bg.webp')";
+        document.body.classList.remove("light-theme-bg");
+        document.body.classList.add("dark-theme-bg");
     }
 
-    // Update the theme toggle icon
     const themeToggleIcon = document.getElementById("theme-toggle-icon");
     if (themeToggleIcon) {
         themeToggleIcon.textContent = isDarkMode ? "dark_mode" : "light_mode";
     }
 
-    // Persist the selected theme in localStorage
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
 }
 
@@ -27,11 +24,7 @@ export function initializeTheme() {
     const savedTheme = localStorage.getItem("theme") || "light";
 
     document.documentElement.setAttribute("data-theme", savedTheme);
-
-    document.body.style.backgroundImage =
-        savedTheme === "dark"
-            ? "url('/assets/images/dark-theme-bg.webp')"
-            : "url('/assets/images/light-theme-bg.webp')";
+    document.body.classList.add(`${savedTheme}-theme-bg`);
 
     const themeToggleIcon = document.getElementById("theme-toggle-icon");
     if (themeToggleIcon) {

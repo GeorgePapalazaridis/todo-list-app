@@ -1,5 +1,8 @@
 /* Default (Light Mode) */
 :root {
+    --min-bg-width: 300px;
+    --max-bg-width: 1200px;
+
     --primary-color: #94bdcd; /* Button primary background */
     --primary-hover-color: #729baf; /* Button primary hover background */
 
@@ -29,6 +32,9 @@
 
 /* Dark Mode */
 [data-theme="dark"] {
+    --min-bg-width: 300px;
+    --max-bg-width: 1200px;
+
     --primary-color: #628594;
     --primary-hover-color: #3f535c;
 
